@@ -6,6 +6,18 @@ body {
 }
 
 h1 {
-  color: #333;
+  color: rebeccapurple;
   text-align: center;
+}
+
+.header-image-container {
+  margin: auto;
+  width: fit-content;
+}
+
+.header-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
 }
