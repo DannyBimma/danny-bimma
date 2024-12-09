@@ -9,7 +9,7 @@ function pwrAlgo(name, age) {
     asciiSum += name.charCodeAt(i);
   }
 
-  // Return and round ASCII sum raised to the power of age. Divide by 100
+  // Round ASCII sum divided by age, square and return 
   return Math.round(Math.pow(asciiSum / age, 2));
 }
 
