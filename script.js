@@ -32,7 +32,7 @@ function calculatePower() {
   const resultDiv = document.getElementById("result");
   resultDiv.style.display = "block";
   resultDiv.innerHTML = `
-        <h2>Results:</h2>
+        <h2 class="article-heading" >Results:</h2>
         <p>Alias: ${name}</p>
         <p>Years on Midgard: ${age}</p>
         <p>Power Level: ${powerLevel}💥</p>
