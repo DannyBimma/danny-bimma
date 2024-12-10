@@ -1,34 +1,36 @@
-// Function to calculate ASCII sum of a string
+// Calc ASCII sum of a string
 function pwrAlgo(name, age) {
-  // Initialize sum to store ASCII values
   let asciiSum = 0;
 
-  // Loop through each character in the name
+  let pwrBaseLine = 8000;
+
+  // Loop over and add ASCII value of each char
   for (let i = 0; i < name.length; i++) {
-    // Add ASCII value of each character to sum
     asciiSum += name.charCodeAt(i);
   }
 
-  // Round ASCII sum divided by age, square and return
-  return Math.round(Math.pow(asciiSum / age, 2));
+  // Round ASCII sum divided by age and square
+  let pwrLvl = Math.round(Math.pow(asciiSum / age, 2));
+
+  return pwrLvl + pwrBaseLine;
 }
 
-// Function to handle the calculation and display
-function calculatePower() {
-  // Get input values
+// Get user data to calc and print results
+function pwrLvlCalc() {
+  // Get user input
   const name = document.getElementById("name").value.trim();
   const age = parseInt(document.getElementById("age").value);
 
-  // Input validation
+  // Validate input
   if (!name || !age || age < 1) {
     alert("Please enter valid name and age!");
     return;
   }
 
-  // Calculate power level using pwrAlgo
+  // Calc power
   const powerLevel = pwrAlgo(name, age);
 
-  // Display result
+  // Print result
   const resultDiv = document.getElementById("result");
   resultDiv.style.display = "block";
   resultDiv.innerHTML = `
