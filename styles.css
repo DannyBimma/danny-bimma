@@ -33,6 +33,14 @@ hr {
   object-fit: cover;
 }
 
+.footer-bottom {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #4a5568;
+  text-align: center;
+  color: #a0aec0;
+}
+
 /* App page styles */
 .calculator {
   background-color: #f5f5f5;

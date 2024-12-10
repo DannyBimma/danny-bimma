@@ -9,7 +9,7 @@ function pwrAlgo(name, age) {
     asciiSum += name.charCodeAt(i);
   }
 
-  // Round ASCII sum divided by age, square and return 
+  // Round ASCII sum divided by age, square and return
   return Math.round(Math.pow(asciiSum / age, 2));
 }
 
@@ -38,3 +38,6 @@ function calculatePower() {
         <p>Power Level: ${powerLevel}💥</p>
     `;
 }
+
+// Get current year for footer
+document.getElementById("currentYear").textContent = new Date().getFullYear();
