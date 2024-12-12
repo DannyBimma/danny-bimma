@@ -33,9 +33,9 @@ function pwrLvlCalc() {
 
   // Add power level meme if over 9000
   if (powerLevel > 9000) {
-    img = `<img src="https://i.kym-cdn.com/entries/icons/facebook/000/000/056/itsover1000.jpg" alt="IT'S OVER 9,000!!" />`;
+    img = `<img class="meme-img" src="https://i.kym-cdn.com/entries/icons/facebook/000/000/056/itsover1000.jpg" alt="IT'S OVER 9,000!!" />`;
   } else {
-    img = `<img src="https://i.imgflip.com/u96z2.jpg" alt="IT'S OVER 9,000!!" />`;
+    img = `<img class="meme-img" src="https://i.imgflip.com/u96z2.jpg" alt="IT'S OVER 9,000!!" />`;
   }
 
   // Print result
