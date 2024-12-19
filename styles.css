@@ -33,6 +33,11 @@ hr {
   object-fit: cover;
 }
 
+.content-img {
+  max-width: 100%;
+  height: auto;
+}
+
 .footer-bottom {
   margin-top: 2rem;
   padding-top: 2rem;
